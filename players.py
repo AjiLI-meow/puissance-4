@@ -13,5 +13,13 @@ def coup_aleatoire(g,j):
             break
 
 
+def coup_humain(g,j):
 
-
+    while True:
+        c = input("Choisissez un coup valid : ")
+        c = int(c)
+        if coup_possible(g,c):
+            jouer(g,j,c)
+            break
+        else:
+            print("Ce coup n'est pas valide, choisissez à nouveau.")

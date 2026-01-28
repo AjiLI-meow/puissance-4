@@ -1,13 +1,15 @@
 from grille import grille_vide, affiche
 from coups import coup_possible, jouer
 from victoire import victoire, match_nul
-from bot import coup_aleatoire
+from players import coup_aleatoire
 
 
 def main():
     g = grille_vide()
     j1=1;
     j2=2;
+
+
 
     while True:
         if match_nul(g):
