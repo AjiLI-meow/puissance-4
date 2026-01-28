@@ -12,5 +12,6 @@ def jouer(g,j,c):
         for l in range(6):
             if g[l][c] == 0:
                 g[l][c] = j
-                print(f'Joueur {j} :')
+                jeton ='X' if j == 1 else '0'
+                print(f'Joueur {j} ({jeton}) :')
                 break

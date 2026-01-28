@@ -13,4 +13,5 @@ def affiche(g):
             elif g[l][c] == 0:
                 print("*", end=' ')
         print("")
+    print("1 2 3 4 5 6 7")
     sleep(1)

@@ -14,10 +14,18 @@ def coup_aleatoire(g,j):
 
 
 def coup_humain(g,j):
-
     while True:
-        c = input("Choisissez un coup valid : ")
-        c = int(c)
+        c = input("Entrez le numéro de la colonne compris entre 1 et 7 : ")
+        try:
+            c = int(c)-1
+        except ValueError:
+            print("Saisissez un entier!")
+            continue
+
+        if c < 0 or c > 6:
+            print("Saisissez un entier entre 1 et 7!")
+            continue
+
         if coup_possible(g,c):
             jouer(g,j,c)
             break
