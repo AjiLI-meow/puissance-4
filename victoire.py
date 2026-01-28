@@ -55,4 +55,4 @@ def victoire(g, j):
 # Écrire une fonction match_nul(g) qui indique si la partie est nulle.
 #Indication : il suffit d’examiner la ligne du haut.
 def match_nul(g):
-    return g[5].count(1) == g[5].count(2)
+    return g[5].count(0) == 0

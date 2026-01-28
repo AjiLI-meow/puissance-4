@@ -8,11 +8,23 @@ def main():
     j1=1;
     j2=2;
 
-    while not victoire(g, j1) and not victoire(g, j2) and not victoire(g, j1):
+    while True:
+        if match_nul(g):
+            print("Match nul!")
+            break
 
-        coup_aleatoire(g, j1)
-        victoire(g, j1)
-        affiche(g)
+        if victoire(g,j1):
+            print("Joueur 1 gagne!")
+            break
+        elif victoire(g,j2):
+            print("Joueur 2 gagne!")
+            break
+        else:
+            coup_aleatoire(g,j1)
+            affiche(g)
+            coup_aleatoire(g, j2)
+            affiche(g)
+
 
 
 if __name__ == "__main__":
