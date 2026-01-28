@@ -51,7 +51,6 @@ def victoire(g, j):
 
 
 
-
 # Écrire une fonction match_nul(g) qui indique si la partie est nulle.
 #Indication : il suffit d’examiner la ligne du haut.
 def match_nul(g):
