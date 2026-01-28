@@ -9,8 +9,8 @@ def coup_possible(g,c):
 # Écrire une fonction jouer(g, j, c) qui place un pion du joueur j dans la colonne c (supposée non pleine).
 # La fonction modifie directement la grille g.
 def jouer(g,j,c):
-    #if coup_possible(g,c): verif dans main
         for l in range(6):
             if g[l][c] == 0:
                 g[l][c] = j
+                print(f'Joueur {j} :')
                 break

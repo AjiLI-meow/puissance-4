@@ -1,3 +1,5 @@
+from time import sleep
+
 def grille_vide():
     return [[0 for c in range(7)] for l in range(6)]
 
@@ -11,3 +13,4 @@ def affiche(g):
             elif g[l][c] == 0:
                 print("*", end=' ')
         print("")
+    sleep(1)
